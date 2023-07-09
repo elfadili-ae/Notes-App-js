@@ -5,12 +5,14 @@
 }
 
 body {
-    background: #485563;
-    background: -webkit-linear-gradient(to right, #29323c, #485563);
-    background: linear-gradient(to right, #29323c, #485563);     
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
 
 #main {
+    margin-left: 80px;
     min-height: 100vh;
     padding-bottom: 50px;
     display: flex;
@@ -21,14 +23,15 @@ body {
 
 #addBtn {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: rgb(80, 202, 32);
-    padding: 10px;
+    top: 10px;
+    left: 5px;
+    background-color: rgb(255, 115, 0);
+    padding: 8px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: rgb(255, 255, 255);
+    font-size: 12px;
     transition: background-color 0.3s ease-in-out;
 }
 
