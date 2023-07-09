@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 #addBtn {
@@ -36,16 +37,48 @@ body {
 }
 
 .note {
-    width: 300px;
-    background-color: black;
+    background-color: rgb(40, 37, 44);
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(238, 238, 238, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: box-shadow 0.3s ease;
 
 }
 
 .note:hover {
-    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px rgba(153, 153, 153, 0.37);
+}
+
+.note-actions {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note-actions i {
+    padding: 5px;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: color 0.3 ease;
+}
+.note-actions i:hover {
+    color: #a5a5a5;
+}
+
+.note textarea {
+    width: 300px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: bisque;
+    background-color: transparent;
+}
+
+.note textarea:focus {
+    outline: none;
 }
